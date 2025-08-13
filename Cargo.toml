@@ -1,0 +1,10 @@
+[package]
+name = "exercise"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name="exercie-app"
+path="src/day2/main.rs"
