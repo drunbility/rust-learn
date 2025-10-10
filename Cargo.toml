@@ -7,4 +7,4 @@ edition = "2024"
 
 [[bin]]
 name="exercie-app"
-path="src/day3/main.rs"
+path="src/day4/main.rs"
