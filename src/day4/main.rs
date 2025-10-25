@@ -3,9 +3,9 @@
 ///
 /// Element `n` of the result is `values[(n+offset)%len] - values[n]`.
 fn offset_differences(offset: usize, values: Vec<i32>) -> Vec<i32> {
-    let len = values.len();
-    let res = values.into_iter().map(|x|(x+offset)%len).collect::<Vec<_>>();
-    res
+   let a = values.iter();
+   let b = values.iter().cycle().skip(offset);
+   a.zip(b).map(|(a,b)|*b-*a).collect()
 }
 
 #[test]
